@@ -988,11 +988,16 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact .info {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  width: 100%;
+  width: fit-content;
   background: #fff;
+}
+
+.contact .data {
+  display: flex;
+  /* align-content: center; */
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .contact .info i {
@@ -1025,8 +1030,12 @@ section {
 }
 
 .contact .info .email, .contact .info .phone {
-  margin-inline-start: 40px;
+  margin-top: 20px;
 }
+
+/* .contact .info .email, .contact .info .phone, .contact .info .address {
+  margin-inline-start: 40%;
+} */
 
 .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
   background: #0563bb;
